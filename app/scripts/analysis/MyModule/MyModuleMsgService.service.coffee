@@ -3,9 +3,9 @@
 BaseModuleMessageService = require 'scripts/BaseClasses/BaseModuleMessageService.coffee'
 # export custom messaging service class
 module.exports = class MyModuleMsgService extends BaseModuleMessageService
-  # define module message list
+  # required to define module message list
   msgList:
-    outgoing: ['mymodule:getData']
-    incoming: ['mymodule:receiveData']
+    outgoing: ['getData', 'infer data types']
+    incoming: ['takeTable', 'data types inferred']
     # required to be the same as module id
     scope: ['socrat_analysis_mymodule']

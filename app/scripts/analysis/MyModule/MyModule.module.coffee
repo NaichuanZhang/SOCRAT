@@ -12,11 +12,11 @@ module.exports = myModule = new Module
       'socrat_analysis_mymodule_msgService': require 'scripts/analysis/MyModule/MyModuleMsgService.service.coffee'
       'socrat_analysis_mymodule_dataService': require 'scripts/analysis/MyModule/MyModuleDataService.service.coffee'
       'socrat_analysis_mymodule_myService': require 'scripts/analysis/MyModule/MyModuleMyService.service.coffee'
-    # controllers:
-    #   'mymoduleMainCtrl': require 'scripts/analysis/MyModule/MyModuleMainCtrl.ctrl.coffee'
-    #   'mymoduleSidebarCtrl': require 'scripts/analysis/MyModule/MyModuleSidebarCtrl.ctrl.coffee'
-    # directives:
-    #   'mymoduleDir': require 'scripts/analysis/MyModule/MyModuleDir.directive.coffee'
+    controllers:
+      'mymoduleMainCtrl': require 'scripts/analysis/MyModule/MyModuleMainCtrl.ctrl.coffee'
+      'mymoduleSidebarCtrl': require 'scripts/analysis/MyModule/MyModuleSidebarCtrl.ctrl.coffee'
+    directives:
+      'mymoduleDir': require 'scripts/analysis/MyModule/MyModuleDir.directive.coffee'
   # module state config
   state:
     # module name to show in UI
