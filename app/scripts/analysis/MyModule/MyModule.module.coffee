@@ -16,12 +16,11 @@ module.exports = myModule = new Module
     #   'mymoduleMainCtrl': require 'scripts/analysis/MyModule/MyModuleMainCtrl.ctrl.coffee'
     #   'mymoduleSidebarCtrl': require 'scripts/analysis/MyModule/MyModuleSidebarCtrl.ctrl.coffee'
     # directives:
-    #   'socratMyModuleDir': require 'scripts/analysis/MyModule/MyModuleDir.directive.coffee'
+    #   'mymoduleDir': require 'scripts/analysis/MyModule/MyModuleDir.directive.coffee'
   # module state config
-  # state:
-  #   # module name to show in UI
-  #   name: 'My Awesome Module'
-  #   url: '/tools/mymodule'
-  #   mainTemplate: require 'partials/analysis/MyModule/main.jade'
-  #   sidebarTemplate: require 'partials/analysis/MyModule/sidebar.jade'
-    runBlock: require 'scripts/analysis/MyModule/MyModuleRunBlock.run.coffee'
+  state:
+    # module name to show in UI
+    name: 'My Awesome Module'
+    url: '/mymodule'
+    mainTemplate: require 'partials/analysis/MyModule/main.jade'
+    sidebarTemplate: require 'partials/analysis/MyModule/sidebar.jade'
