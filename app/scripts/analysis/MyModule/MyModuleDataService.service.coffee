@@ -12,6 +12,6 @@ module.exports = class MyModuleDataService extends BaseModuleDataService
     @getDataRequest = @msgManager.getMsgList().outgoing[0]
     @getDataResponse = @msgManager.getMsgList().incoming[0]
     # Need this to get data displayed
-   inferDataTypes: (data, cb) ->
+  inferDataTypes: (data, cb) ->
     @post(@msgManager.getMsgList().outgoing[1], @msgManager.getMsgList().incoming[1], data).then (resp) =>
       cb resp
